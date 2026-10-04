@@ -1,0 +1,202 @@
+# =========================================================
+#  CustomTrims config
+#  After editing, run /ctrim reload
+# =========================================================
+
+# How often particles are drawn, in ticks (20 ticks = 1 second).
+# 1 = smoothest, 2 = good balance, 3-4 = lighter on big servers.
+tick-interval: 2
+
+# How many armor pieces need a custom trim before effects show (1-4).
+min-armor-pieces: 1
+
+# Only draw the trail while the player is moving.
+trail-only-when-moving: true
+
+# Hide effects for players who have the Invisibility potion effect.
+hide-when-invisible: true
+
+# Hide effects while sneaking.
+hide-when-sneaking: false
+
+# Limits for /ctrim size and /ctrim density
+max-size: 3.0
+max-density: 3.0
+
+# ---------------------------------------------------------
+# Presets: /ctrim preset <name>   or   /ctrim give <player> <name>
+#
+#  pattern:   bolt coast dune eye flow host raiser rib sentry shaper
+#             silence snout spire tide vex ward wayfinder wild  (or none)
+#  material:  amethyst copper diamond emerald gold iron lapis
+#             netherite quartz redstone resin
+#  colors:    names (red, aqua, pink...) or hex (#FF00AA)
+#  trail / aura-particle: see /ctrim options
+#  trail-shape: stream comet double spiral sparks cloud footsteps
+#  aura:      none ring double_ring halo helix double_helix orbit
+#             pulse crown tornado wings fireflies
+# ---------------------------------------------------------
+presets:
+  inferno:
+    name: Inferno
+    pattern: rib
+    material: gold
+    colors: ["#FF3D00", "#FFC400"]
+    trail: flame
+    trail-shape: comet
+    aura: tornado
+    aura-particle: gradient
+  frost:
+    name: Frost
+    pattern: ward
+    material: diamond
+    colors: ["#9BE7FF", "#FFFFFF"]
+    trail: snow
+    trail-shape: sparks
+    aura: double_ring
+    aura-particle: blend
+  void:
+    name: Void
+    pattern: silence
+    material: netherite
+    colors: ["#2B0040", "#B000FF"]
+    trail: reverse_portal
+    trail-shape: stream
+    aura: helix
+    aura-particle: gradient
+  celestial:
+    name: Celestial
+    pattern: spire
+    material: quartz
+    colors: ["#FFF6B0", "#7EC8FF"]
+    trail: end_rod
+    trail-shape: comet
+    aura: halo
+    aura-particle: sparkle
+  angel:
+    name: Angel
+    pattern: host
+    material: quartz
+    colors: ["#FFFFFF", "#FFF2B3"]
+    trail: firework
+    trail-shape: comet
+    aura: wings
+    aura-particle: blend
+  demon:
+    name: Demon
+    pattern: rib
+    material: redstone
+    colors: ["#5A0000", "#FF2D2D"]
+    trail: flame
+    trail-shape: footsteps
+    aura: wings
+    aura-particle: gradient
+  toxic:
+    name: Toxic
+    pattern: wild
+    material: emerald
+    colors: ["#39FF14", "#0B5D1E"]
+    trail: dual
+    trail-shape: stream
+    aura: pulse
+    aura-particle: blend
+  sakura:
+    name: Sakura
+    pattern: flow
+    material: amethyst
+    colors: ["#FFB7D5", "#FF5FA2"]
+    trail: cherry
+    trail-shape: sparks
+    aura: orbit
+    aura-particle: blend
+  ocean:
+    name: Ocean
+    pattern: tide
+    material: lapis
+    colors: ["#0077FF", "#3DF5FF"]
+    trail: nautilus
+    trail-shape: spiral
+    aura: double_helix
+    aura-particle: gradient
+  royal:
+    name: Royal
+    pattern: sentry
+    material: gold
+    colors: ["#6A0DAD", "#FFC72C"]
+    trail: enchant
+    trail-shape: comet
+    aura: crown
+    aura-particle: dual
+  shadow:
+    name: Shadow
+    pattern: eye
+    material: netherite
+    colors: ["#111111", "#5A5A5A"]
+    trail: smoke
+    trail-shape: stream
+    aura: fireflies
+    aura-particle: dust
+  prism:
+    name: Prism
+    pattern: wayfinder
+    material: diamond
+    colors: ["#FF0000", "#0000FF"]
+    trail: rainbow
+    trail-shape: comet
+    aura: ring
+    aura-particle: rainbow
+  lovestruck:
+    name: Lovestruck
+    pattern: coast
+    material: redstone
+    colors: ["#FF4F7B", "#FFB3C7"]
+    trail: heart
+    trail-shape: footsteps
+    aura: orbit
+    aura-particle: dual
+  storm:
+    name: Storm
+    pattern: bolt
+    material: copper
+    colors: ["#FFF23D", "#7EC8FF"]
+    trail: electric
+    trail-shape: sparks
+    aura: tornado
+    aura-particle: blend
+  soulfire:
+    name: Soulfire
+    pattern: vex
+    material: diamond
+    colors: ["#00E5FF", "#1A4D66"]
+    trail: soul_flame
+    trail-shape: comet
+    aura: helix
+    aura-particle: dust
+  emerald:
+    name: Emerald
+    pattern: shaper
+    material: emerald
+    colors: ["#00D27A", "#B6FFD9"]
+    trail: glow
+    trail-shape: sparks
+    aura: double_ring
+    aura-particle: blend
+  ender:
+    name: Ender
+    pattern: eye
+    material: amethyst
+    colors: ["#1D0033", "#00FFAA"]
+    trail: portal
+    trail-shape: stream
+    aura: double_helix
+    aura-particle: gradient
+  nebula:
+    name: Nebula
+    pattern: dune
+    material: amethyst
+    colors: ["#FF2DD9", "#2D5BFF"]
+    trail: gradient
+    trail-shape: comet
+    aura: fireflies
+    aura-particle: blend
+    density: 1.5
